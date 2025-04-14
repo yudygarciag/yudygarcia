@@ -1,136 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>En Mantenimiento</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- favicon = Logo tab-->
-    <link href="img/fcsfavicon.ico" rel="icon">
-    <title>Yudy Garcia</title>
+    body {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    .container {
+      animation: fadeIn 1.5s ease-in-out;
+      padding: 2rem;
+    }
 
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
 
-    <!-- Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
 
-    <!-- TrustBox script -->
-<script  src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
+    .gear {
+      font-size: 4rem;
+      animation: spin 3s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-
-<!-- HEADER -->
 <body>
-
-    <header class="homeheader">
-        
-        <div class="logo">
-            <a href="index.html">                                 
-            <img src="img/logo.png" alt="logo">
-            </a>
-        </div>
-
-<!-- Botton small devices -->
-
-        <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
-            <img src="img/menu.png" alt="menu">
-        </button>
-
-    <div class="menus">
-        <nav class="main-menu" id="main-menu">
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="experience.html">Expirence</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-        </nav>
-    </div>   
-
-    <div class="buttonslinks">
-    <div class="topbar">
-        
-    <form class="formsearch">
-        <input class="formsearchinput" type="search" placeholder="Search" aria-label="Search">
-        <button class="formsearchbutton" type="submit">
-            <img src="img/search1.png" alt= "search">
-        </button>
-    </form>
-
-    <div class="buttons">
-
-            <button class="buttonbooking">Call
-                &nbsp;
-                <img src="img/booking2.png" alt="calendar">
-            </button>
-            <button class="buttonlogin"> email
-                <img src="img/login.png" alt="login">
-            </button>
-    </div>
-    </div>
-    </div>
-</header>
-
-
-<main>
-    <section id="home">
-            <div class="welcome">
-            <h1>WELCOME<br>
-             <span> to my page</span> 
-            </h1>
-            <p>
-                 iNFO
-            <a href="#first" title="How it works?">More...</a>
-            </p>
-            
-            <br>
-            <div class="welcomeimg">
-                <img src="img/certificates.png" alt="certificates">
-            </div>
-            </div>
-
-            <div class="welcomepicture">
-            <!--<img src="img/booking.png" alt="Imagen" class="welcomepicture">
-        </div> -->
-            </div>
-            <p id="first"></p>
-    </section>
-
+  <div class="container">
+    <div class="gear">⚙️</div>
+    <h1>¡I am in maintenance!</h1>
     
-        <section id="contact">
-             <div class="contactdiv" id="contacttitle">
-            <h2>Contact Me</h2>
-            <p>
-            You can contact us by the following options:
-            </p>
+    <p> We will be back soon with something incredible. Thank you for your patience.</p>
+  </div>
+</body>
 
-            <p>
-            <strong>Phone:</strong> xxxxxxxxxxxx <br>
-            Office Opening hours:<br>
-            xx - xx<br>
-            Monday to Friday<br>
-            </p>
-            <br>
-            <p>
-            <strong>Mail:</strong>
-            <br><a href="mailto:info@fullcleaningservice.com" title="contactmail" class="contactdivlink">yg@</a>
-            <br>
-            <p>You can write to us 24 hours a day, seven days a week, and we will be happy to answer you as soon as possible.
-            </p>
-            <br>
-            <p>
-            <strong>We are here to help you.</strong>
-            </p>
-            <div class="contactdivcenter">
-            <a href="contact.html" title="contactus" class="contactdivcenter">Contact form...</a>
-            </div>
-        </div>
-        </section>
-
-        
-    </main>
 
     <footer>
         <p>&copy; Developed by Yudy Garcia</p>
     </footer>
+</html>
