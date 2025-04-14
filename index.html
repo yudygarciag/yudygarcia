@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>En Maintenance</title>
-  <style>
+<style>
     * {
       margin: 0;
       padding: 0;
@@ -16,20 +16,26 @@
       background: linear-gradient(135deg, #1f1c2c, #928dab);
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
     }
-    .main {
-      flex: 1;
+
+    .content {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding: 2rem;
     }
 
     .container {
-      text-align: center;
       animation: fadeIn 1.5s ease-in-out;
-      padding: 2rem;
+    }
+
+    .gear {
+      font-size: 4rem;
+      animation: spin 3s linear infinite;
+      display: inline-block;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -39,23 +45,19 @@
 
     p {
       font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .gear {
-      font-size: 4rem;
-      margin-bottom: 1rem;
-      animation: spin 3s linear infinite;
-      display: inline-block;
     }
 
     footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      opacity: 0.7;
+      background: rgba(0, 0, 0, 0.1);
+      color: #eee;
     }
-    
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
